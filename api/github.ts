@@ -12,11 +12,12 @@ export default async (req) =>  {
     return new Response(`
       <meta http-equiv="refresh" content="0; url=${redirect}">
       Redirecting...<br /><br />
-      <a href="${redirect}">Click here<a/> if your browser does not automaticly redirect.
-      <script>setTimeout(() => window.close(), 5000)</script>
+      <a href="${redirect}">Click here</a> if your browser does not automaticly redirect.
     `, { headers: { 'content-type': 'text/html' } })
   } catch (e) {
     console.log('⛔️', e.message)
     return new Response('Error authenticating. You can close this window.', { status: 500 })
   }
 }
+
+// <script>setTimeout(() => window.close(), 5000)</script>
