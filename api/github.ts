@@ -11,6 +11,7 @@ export default async (req) =>  {
     const redirect = `soundsetr://access_token/${accessToken}`
     return new Response(`
       <meta http-equiv="refresh" content="0; url=${redirect}">
+      <h1>Soundsetr</h1><br />
       Redirecting...<br /><br />
       <a href="${redirect}">Click here</a> if your browser does not automaticly redirect.
     `, { headers: { 'content-type': 'text/html' } })
