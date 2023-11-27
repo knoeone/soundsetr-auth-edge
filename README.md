@@ -1,5 +1,5 @@
 
-# Soundsetr Github Authentication server
+# Soundsetr Github Authentication
 
 Authenticates a user to use github for sharing Sound Sets
 
